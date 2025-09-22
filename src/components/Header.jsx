@@ -1,4 +1,4 @@
-import logo from './assets/react-core-concepts.png';
+import logo from '../assets/react-core-concepts.png';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core', 'Cool', 'Essential', 'Key', 'Important', 'Necessary', 'Vital', 'Indispensable'];
 
@@ -6,7 +6,7 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function Header() {
+export default function Header() {
   const prefix = reactDescriptions[genRandomInt(reactDescriptions.length - 1)];
   return (
       <header>
@@ -19,4 +19,3 @@ function Header() {
       </header>
   );
 }
-export default Header;

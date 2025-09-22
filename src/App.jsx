@@ -1,17 +1,8 @@
-import Header from "./Header";
+import Header from "./components/Header.jsx";
 import {CORE_CONCEPTS} from "./data.js";
+import CoreConcept from "./components/CoreConcept.jsx";
 
-function CoreConcept({image, title, description}) {
-    return (
-        <li>
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
-            <p>{description}</p>
-        </li>
-    )
-}
-
-function App() {
+export default function App() {
   return (
     <div>
       <Header />
@@ -29,5 +20,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
